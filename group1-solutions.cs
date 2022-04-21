@@ -257,3 +257,29 @@ public static string Bmi(double weight, double height)
         return "Overweight";
     else return "Obese";
 }
+
+//Find Maximum and Minimum Values of a List
+public class Kata
+{
+  public int Min(int[] list)
+  {
+    int min = list[0];
+    for (int i=0; i < list.Length;i++)
+      {
+      if (list[i] < min)
+        min = list[i];
+    }
+    return min;
+  }
+  
+  public int Max(int[] list)
+  {
+    int max = list[0];
+    for (int i=0; i < list.Length;i++)
+  {
+      if (list[i] > max)
+        max = list[i];
+    }
+    return max;
+  }
+}
