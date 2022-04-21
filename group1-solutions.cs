@@ -228,3 +228,14 @@ public class Kata
     return s;
   }
 }
+
+//Beginner - Reduce but Grow
+public class Kata
+{
+  public static int Grow(int[] x)
+  {
+    int s = 1;
+    for (int i = 0; i < x.Length; ++i) s*=x[i];
+    return s;
+  }
+}
